@@ -12,8 +12,8 @@
 		A8BCA1F71F7D6CD700F330A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8BCA1F51F7D6CD700F330A5 /* Main.storyboard */; };
 		A8BCA1F91F7D6CD700F330A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8BCA1F81F7D6CD700F330A5 /* Assets.xcassets */; };
 		A8BCA1FC1F7D6CD700F330A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8BCA1FA1F7D6CD700F330A5 /* LaunchScreen.storyboard */; };
-		A8BCA2071F7D6CD700F330A5 /* TDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BCA2061F7D6CD700F330A5 /* TDDTests.swift */; };
-		A8BCA2121F7D6CD700F330A5 /* TDDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BCA2111F7D6CD700F330A5 /* TDDUITests.swift */; };
+		A8BCA2231F7D722400F330A5 /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BCA2221F7D722400F330A5 /* BrainTests.swift */; };
+		A8BCA2251F7D746000F330A5 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BCA2241F7D746000F330A5 /* Brain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +42,11 @@
 		A8BCA1FB1F7D6CD700F330A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8BCA1FD1F7D6CD700F330A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8BCA2021F7D6CD700F330A5 /* TDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8BCA2061F7D6CD700F330A5 /* TDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDTests.swift; sourceTree = "<group>"; };
 		A8BCA2081F7D6CD700F330A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8BCA20D1F7D6CD700F330A5 /* TDDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8BCA2111F7D6CD700F330A5 /* TDDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDUITests.swift; sourceTree = "<group>"; };
 		A8BCA2131F7D6CD700F330A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8BCA2221F7D722400F330A5 /* BrainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
+		A8BCA2241F7D746000F330A5 /* Brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +97,9 @@
 		A8BCA1F01F7D6CD700F330A5 /* TDD */ = {
 			isa = PBXGroup;
 			children = (
+				A8BCA2211F7D6F6C00F330A5 /* Model */,
+				A8BCA2201F7D6F6700F330A5 /* View */,
+				A8BCA21F1F7D6F5E00F330A5 /* Controller */,
 				A8BCA1F11F7D6CD700F330A5 /* AppDelegate.swift */,
 				A8BCA1F31F7D6CD700F330A5 /* ViewController.swift */,
 				A8BCA1F51F7D6CD700F330A5 /* Main.storyboard */,
@@ -110,7 +113,7 @@
 		A8BCA2051F7D6CD700F330A5 /* TDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				A8BCA2061F7D6CD700F330A5 /* TDDTests.swift */,
+				A8BCA2221F7D722400F330A5 /* BrainTests.swift */,
 				A8BCA2081F7D6CD700F330A5 /* Info.plist */,
 			);
 			path = TDDTests;
@@ -119,10 +122,31 @@
 		A8BCA2101F7D6CD700F330A5 /* TDDUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A8BCA2111F7D6CD700F330A5 /* TDDUITests.swift */,
 				A8BCA2131F7D6CD700F330A5 /* Info.plist */,
 			);
 			path = TDDUITests;
+			sourceTree = "<group>";
+		};
+		A8BCA21F1F7D6F5E00F330A5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A8BCA2201F7D6F6700F330A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8BCA2211F7D6F6C00F330A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8BCA2241F7D746000F330A5 /* Brain.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +221,7 @@
 					};
 					A8BCA2011F7D6CD700F330A5 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = A8BCA1ED1F7D6CD700F330A5;
 					};
@@ -260,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8BCA1F41F7D6CD700F330A5 /* ViewController.swift in Sources */,
+				A8BCA2251F7D746000F330A5 /* Brain.swift in Sources */,
 				A8BCA1F21F7D6CD700F330A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8BCA2071F7D6CD700F330A5 /* TDDTests.swift in Sources */,
+				A8BCA2231F7D722400F330A5 /* BrainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +302,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8BCA2121F7D6CD700F330A5 /* TDDUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,12 +482,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DKZWJ5854;
 				INFOPLIST_FILE = TDDTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matt.deuschle.TDDTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD.app/TDD";
@@ -474,6 +501,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DKZWJ5854;
 				INFOPLIST_FILE = TDDTests/Info.plist;
