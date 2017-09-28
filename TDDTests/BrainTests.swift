@@ -1,5 +1,5 @@
 //
-//  TDDTests.swift
+//  BrainTests.swift
 //  TDDTests
 //
 //  Created by Matt Deuschle on 9/28/17.
@@ -7,9 +7,8 @@
 //
 
 import XCTest
-@testable import TDD
 
-class TDDTests: XCTestCase {
+class BrainTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
