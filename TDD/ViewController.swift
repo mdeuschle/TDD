@@ -13,8 +13,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var highScoreLabel: UILabel!
     @IBOutlet weak var scoreButton: UIButton!
 
+    var game: Game?
+    var gameScore: Int?
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        game = Game()
+    }
+
+    func play(move: String) {
+        guard let unwrappedGame = game else { return }
+        let response = unwrappedGame.play(move: move)
+        gameScore = response.score
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {

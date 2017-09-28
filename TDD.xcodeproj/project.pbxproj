@@ -16,6 +16,7 @@
 		A8BCA2251F7D746000F330A5 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BCA2241F7D746000F330A5 /* Brain.swift */; };
 		A8BCA2271F7D98DF00F330A5 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BCA2261F7D98DE00F330A5 /* Game.swift */; };
 		A8BCA2291F7D990500F330A5 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BCA2281F7D990500F330A5 /* GameTests.swift */; };
+		A8BCA22B1F7DAEE700F330A5 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BCA22A1F7DAEE700F330A5 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A8BCA2241F7D746000F330A5 /* Brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 		A8BCA2261F7D98DE00F330A5 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		A8BCA2281F7D990500F330A5 /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
+		A8BCA22A1F7DAEE700F330A5 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			children = (
 				A8BCA2221F7D722400F330A5 /* BrainTests.swift */,
 				A8BCA2281F7D990500F330A5 /* GameTests.swift */,
+				A8BCA22A1F7DAEE700F330A5 /* ViewControllerTests.swift */,
 				A8BCA2081F7D6CD700F330A5 /* Info.plist */,
 			);
 			path = TDDTests;
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8BCA22B1F7DAEE700F330A5 /* ViewControllerTests.swift in Sources */,
 				A8BCA2231F7D722400F330A5 /* BrainTests.swift in Sources */,
 				A8BCA2291F7D990500F330A5 /* GameTests.swift in Sources */,
 			);
