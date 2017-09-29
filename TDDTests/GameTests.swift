@@ -27,49 +27,49 @@ class GameTests: XCTestCase {
 
     func testIfFizzMoveIsRight() {
         game.score = 2
-        let response = game.play(move: "Fizz")
+        let response = game.play(move: .fizz)
         let result = response.right
         XCTAssertTrue(result)
     }
 
     func testIfFizzMoveIsWrong() {
         game.score = 1
-        let response = game.play(move: "Fizz")
+        let response = game.play(move: .fizz)
         let result = response.right
         XCTAssertEqual(result, false)
     }
 
     func testIfBuzzMoveIsRight() {
         game.score = 4
-        let response = game.play(move: "Buzz")
+        let response = game.play(move: .buzz)
         let result = response.right
         XCTAssertTrue(result)
     }
 
     func testIfBuzzMoveIsWrong() {
         game.score = 1
-        let response = game.play(move: "Buzz")
+        let response = game.play(move: .buzz)
         let result = response.right
         XCTAssertEqual(result, false)
     }
 
     func testIfFizzBuzzMoveIsRight() {
         game.score = 14
-        let response = game.play(move: "FizzBuzz")
+        let response = game.play(move: .fizzBuzz)
         let result = response.right
         XCTAssertTrue(result)
     }
 
     func testIfFizzBuzzMoveIsWrong() {
         game.score = 1
-        let response = game.play(move: "FizzBuzz")
+        let response = game.play(move: .fizzBuzz)
         let result = response.right
         XCTAssertEqual(result, false)
     }
 
     func testIfWrongMoveScoreNotIncremented() {
         game.score = 1
-        let _ = game.play(move: "Fizz")
+        let _ = game.play(move: .fizz)
         XCTAssertEqual(game.score, 1)
     }
 }

@@ -17,6 +17,8 @@
 		A8BCA2271F7D98DF00F330A5 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BCA2261F7D98DE00F330A5 /* Game.swift */; };
 		A8BCA2291F7D990500F330A5 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BCA2281F7D990500F330A5 /* GameTests.swift */; };
 		A8BCA22B1F7DAEE700F330A5 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BCA22A1F7DAEE700F330A5 /* ViewControllerTests.swift */; };
+		A8BCA22D1F7DC1FF00F330A5 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BCA22C1F7DC1FF00F330A5 /* UITests.swift */; };
+		A8BCA22F1F7DC9DC00F330A5 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BCA22E1F7DC9DB00F330A5 /* Move.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		A8BCA2261F7D98DE00F330A5 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		A8BCA2281F7D990500F330A5 /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		A8BCA22A1F7DAEE700F330A5 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		A8BCA22C1F7DC1FF00F330A5 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
+		A8BCA22E1F7DC9DB00F330A5 /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 		A8BCA2101F7D6CD700F330A5 /* TDDUITests */ = {
 			isa = PBXGroup;
 			children = (
+				A8BCA22C1F7DC1FF00F330A5 /* UITests.swift */,
 				A8BCA2131F7D6CD700F330A5 /* Info.plist */,
 			);
 			path = TDDUITests;
@@ -154,6 +159,7 @@
 			children = (
 				A8BCA2241F7D746000F330A5 /* Brain.swift */,
 				A8BCA2261F7D98DE00F330A5 /* Game.swift */,
+				A8BCA22E1F7DC9DB00F330A5 /* Move.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 					};
 					A8BCA20C1F7D6CD700F330A5 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = A8BCA1ED1F7D6CD700F330A5;
 					};
@@ -293,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8BCA22F1F7DC9DC00F330A5 /* Move.swift in Sources */,
 				A8BCA1F41F7D6CD700F330A5 /* ViewController.swift in Sources */,
 				A8BCA2251F7D746000F330A5 /* Brain.swift in Sources */,
 				A8BCA1F21F7D6CD700F330A5 /* AppDelegate.swift in Sources */,
@@ -314,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8BCA22D1F7DC1FF00F330A5 /* UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,12 +539,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DKZWJ5854;
 				INFOPLIST_FILE = TDDUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matt.deuschle.TDDUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TDD;
@@ -546,6 +557,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DKZWJ5854;
 				INFOPLIST_FILE = TDDUITests/Info.plist;

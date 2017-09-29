@@ -26,17 +26,17 @@ class Brain {
         return isDivisibleBy(number: number, divisor: 15)
     }
 
-    func check(number: Int) -> String {
+    func check(number: Int) -> Move {
         let check = (number % 3 == 0, number % 5 == 0)
         switch check {
         case (true, true):
-            return "FizzBuzz"
+            return .fizzBuzz
         case (true, false):
-            return "Fizz"
+            return .fizz
         case (false, true):
-            return "Buzz"
+            return .buzz
         default:
-            return String(number)
+            return .number
         }
     }
 }
